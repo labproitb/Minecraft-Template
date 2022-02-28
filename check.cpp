@@ -24,7 +24,7 @@ int main() {
           same = false;
         }
       }
-      if (same) {
+      if (same && !getline(answerFile, answer) && !getline(outputFile, output)) {
         correct++;
       }
     }

@@ -19,6 +19,8 @@ test: $(TC_FOLDER)/*.$(EXT_IN) $(EXECUTABLE_FILENAME)
 	done;
 
 # Check
-check: $(TC_FOLDER)/*.$(EXT_ANS) $(TC_FOLDER)/*.$(EXT_OUT) check.cpp
+check: FORCE check.cpp
 	g++ -std=c++17 -o check check.cpp
 	./check
+
+FORCE: ;
