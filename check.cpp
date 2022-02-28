@@ -24,8 +24,12 @@ int main() {
           same = false;
         }
       }
-      if (same && !getline(answerFile, answer) && !getline(outputFile, output)) {
+      if (same && !getline(answerFile, answer) &&
+          !getline(outputFile, output)) {
         correct++;
+        cout << "Test " << total << " passed." << endl;
+      } else {
+        cout << "Test " << total << " failed." << endl;
       }
     }
   }
