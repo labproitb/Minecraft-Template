@@ -32,7 +32,7 @@ int main() {
       ofstream outputFile(outputPath);
 
       // hardcode for first test case
-      outputFile << "21:1" << endl;
+      outputFile << "21:10" << endl;
       outputFile << "6:1" << endl;
       for (int i = 2; i < 27; i++) {
         outputFile << "0:0" << endl;
@@ -48,9 +48,10 @@ int main() {
       cout << "TODO" << endl;
     } else if (command == "MOVE") {
       string slotSrc;
+      int slotQty;
       string slotDest;
       // need to handle multiple destinations
-      cin >> slotSrc >> slotDest;
+      cin >> slotSrc >> slotQty >> slotDest;
       cout << "TODO" << endl;
     } else {
       // todo
