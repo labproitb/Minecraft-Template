@@ -41,7 +41,7 @@ int main() {
       cout << "Exported" << endl;
     } else if (command == "CRAFT") {
       cout << "TODO" << endl;
-    } else if (command == "CREATE") {
+    } else if (command == "GIVE") {
       string itemName;
       int itemQty;
       cin >> itemName >> itemQty;
