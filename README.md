@@ -11,8 +11,9 @@ This template consists of:
 - makefile for compiling and testing
 
 ## Running the Makefile
-Make sure you are using Linux with C++17 installed. WSL also works if you are using Windows.
+Make sure you are using Linux with C++17. WSL also works if you are using Windows.
 ```
+sudo apt-get install make g++
 make all
 ```
 Using the sample main file, it should return that 1 out of 2 tests passed.
